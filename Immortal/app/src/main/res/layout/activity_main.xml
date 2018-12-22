@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.parallels.mipt.immortal.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="304dp"
+        android:layout_height="437dp"
+        android:layout_weight="1"
+        android:foregroundGravity="bottom"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:text="start"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="389dp" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/start"
+            android:layout_weight="1"
+            android:text="stop"/>
+
+        <CheckBox
+            android:id="@+id/adminEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/stop"
+            android:text="Admin Enable"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
